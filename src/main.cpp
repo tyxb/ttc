@@ -41,13 +41,13 @@ static CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 static CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 20);
 
-unsigned int nStakeMinAge = 60 * 60 * 24 * 1;	// ×îÐ¡±ÒÁä: 1d
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 30;	// ×î´ó±ÒÁä: 30d
+unsigned int nStakeMinAge = 60 * 60 * 24 * 1;	// Ã—Ã®ÃÂ¡Â±Ã’ÃÃ¤: 1d
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 30;	// Ã—Ã®Â´Ã³Â±Ã’ÃÃ¤: 30d
 unsigned int nStakeTargetSpacing = 60;			// 60 sec block spacing
 
 
 
-int64 nChainStartTime = 1449116007;//utcÊ±¼ä
+int64 nChainStartTime = 1449116007;//utcÃŠÂ±Â¼Ã¤
 int nCoinbaseMaturity = 100;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -950,7 +950,7 @@ int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 
 	if(nHeight >= 1 && nHeight <= 10)
 	{
-		nSubsidy = 3000000000 * COIN;	//500W
+		nSubsidy = 5000000000 * COIN;	
 		//return nSubsidy + nFees;
 	}
 
